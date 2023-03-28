@@ -2,12 +2,12 @@ import random
 
 
 def main():
-    answer = input("Hello! Do you want to play? YES/NO\n> ")
+    answer = input("Hello! Do you want to play? YES/NO\n> ").lower()
 
-    if answer.lower() != "yes":
-        print("Good bye!")
-    else:
+    if answer == "yes":
         start_game()
+    else:
+        print("Good bye!")
 
 
 def start_game():
